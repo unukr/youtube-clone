@@ -1,0 +1,51 @@
+.video-detail-wrapper {
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .video__info {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    .edit-video {
+      width: 128px;
+      height: 32px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+      border: none;
+      font-weight: bold;
+      background-color: #3498db;
+      color: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .video__author {
+      a {
+        color: #3498db;
+      }
+    }
+  }
+  .video__comments {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-list {
+      display: flex;
+      flex-direction: column;
+      li {
+        margin-bottom: 10px;
+        span {
+          margin-right: 10px;
+        }
+        a {
+          color: red;
+        }
+      }
+    }
+  }
+}

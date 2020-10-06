@@ -1,0 +1,51 @@
+.header {
+  background-color: $white;
+  margin-bottom: 20px;
+  .header__wrapper {
+    padding: 5px 0px;
+    width: 96%;
+    margin: 0 auto;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    .header__column {
+      i {
+        color: $red;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        span {
+          margin-left: 2px;
+          color: $black;
+          letter-spacing: -1px;
+          font-size: 20px;
+        }
+      }
+      &:nth-child(2) {
+        width: 100%;
+        justify-self: center;
+      }
+      &:last-child {
+        justify-self: end;
+      }
+      ul {
+        display: flex;
+        color: $black;
+        font-weight: 600;
+        text-transform: uppercase;
+        li:not(:last-child) {
+          margin-right: 15px;
+        }
+        a:visited,
+        a:link {
+          color: $black;
+        }
+      }
+      form {
+        input {
+        }
+      }
+    }
+  }
+}

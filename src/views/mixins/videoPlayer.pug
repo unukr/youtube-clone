@@ -1,0 +1,18 @@
+mixin videoPlayer(video={})
+    .video__player-container#jsVideoContainer
+        video.player#jsVideoPlayer(src=video.fileUrl)
+        .player__controls
+            .player__column
+                span#jsVolumeButton
+                    i.fas.fa-volume-down
+                span
+                    span#jsCurrentTime 00:00:00
+                    |/  
+                    span#jsTotalTime 00:00:00
+                input.player__volume#jsVolume(type="range" min="0" max="1" step="0.1" value="0.5")
+            .player__column
+                span#jsPlayButton
+                    i.fas.fa-play
+            .player__column
+                span#jsExpandButton
+                    i.fas.fa-expand

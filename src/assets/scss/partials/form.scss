@@ -1,0 +1,22 @@
+.form-container {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 32px;
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input[type="submit"] {
+      background-color: $dark-red;
+      color: $white;
+    }
+  }
+  a {
+    background-color: $black;
+    color: $white;
+  }
+}
